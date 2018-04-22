@@ -15,9 +15,9 @@ def iniciar():
         exit("You need to have root privileges to run HackaTools.\nPlease try again, this time using 'sudo'. Exiting.")
     if check_host() == True:
         a = input('Have you installed the dependencies? (Y/n)')
-        if a == 'Y' or 'y':
+        if a == 'Y' or a == 'y':
             menu()
-        elif a == 'N' or 'n':
+        elif a == 'N' or a == 'n':
             submenu0()
             menu()
         else:
